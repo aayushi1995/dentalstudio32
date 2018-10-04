@@ -20,10 +20,10 @@
 ?>
 <?php
 $servername = "localhost";
-$username = "id5008930_root";
-$password = "root123";
-$mydb="id5008930_test";
-// Create connection
+$username="root";
+$password=""
+$mydb="test"
+
 $conn = mysqli_connect($servername, $username, $password, $mydb);
 
 // Check connection

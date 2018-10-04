@@ -4,21 +4,8 @@
     <title>Dental Studio 32</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="jQuery/jQuery.js"></script>
-    <!-- <script src="owl-carousel-assets/assets/vendors/jquery.min.js"></script> -->
 
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|EB+Garamond|PT+Serif|Volkhov|Caveat" rel="stylesheet">
-    <!-- google places -->
-    <!-- owl carousel -->
-
-    <link rel="stylesheet" href="owl-carousel-assets/owlcarousel/assets/owl.carousel.min.css">
-
-    <script src="owl-carousel-assets/owlcarousel/owl.carousel.js"></script>
-    <!-- MAIN Styles -->
-    <link rel="stylesheet" href="style.css">
+     <?php include 'load_resources.php';?>
   </head>
   <body>
     <div class="main_container">
@@ -66,12 +53,13 @@
 
                 </div>
             </div>
-        </div>
-    <!-- BOOK AN APPOINTMENT -->
-    <div class="bookanappointed">
-        Click Here to Book an Appoinment.  
+            <div class="bookanappointed">
+       Book your free consultation with us today.
         <button type="button"> BOOK NOW </button>
     </div>
+        </div>
+    <!-- BOOK AN APPOINTMENT -->
+    
     <!-- review section -->
 
     <div class="container google_justdial">
@@ -93,8 +81,8 @@
     <div class="container welcome">
         <div class="row ">
             <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-                <div class="intro">
-                        <div style="font-size: 28px; font-weight: 500; font-family: 'Raleway', sans-serif; color: #000;">Welcome to the <span style="font-weight: 800; color: #0148a0; font-family: 'Raleway', sans-serif; font-size: 28px;">Dental Studio 32</span>!</div>
+                <div class="content">
+                      <div class="heading">Welcome to <span class="heading2">Studio 32</span>!</div>
                         At Studio 32, we are committed to providing world-class dental care along with excellent customer service to our patients. We are dedicated to delivering the very best results, whether it is customizing the perfect smile, reconstructing the entire mouth or helping you achieve flawless facial contours; and all in a comfortable and relaxed setting. Supporting you every step of the way from planning to post-treatment care, our team of experts specialize in making your experience a pain-free, pampering wellness visit.<br>
                         <div style="margin:5% 0px;border-top:1px solid #508dfd;">When you visit Studio 32, you will see and feel the difference as pointed out and appreciated by our patients in their wonderful testimonials. Quite simply, we love what we do and it shows. With STUDIO32 you are definitely guaranteed a ‘wow’ experience!!</div> 
                 </div>
@@ -107,9 +95,9 @@
     <!-- why choose us -->
     <div class="container-fluid">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 blue_belt">
-                <span class="strong_font">WHY</span>CHOOSE US ?
+               <div class="heading"> Why <span class="heading2">Choose Us ? </span></div>
         </div>
-        <div id="whychooseus" class="row ">
+        <div id="whychooseus" class="row content">
             
             <div class="icon_div col-lg-3 col-md-3 col-sm-3 col-xs-6">
                 <div><img src=" img/icons/icon1.jpg"  style="width:50px;"></div>
@@ -160,15 +148,15 @@
     <!-- team   -->
     <section id="team">
         <div class="blue_belt">
-                <span class="strong_font">MEET</span>THE TEAM
+                <div class="heading">  Meet <span class="heading2">the Team </span></div>
         </div>
         <div class="container">
-        <div class="owl-carousel owl-theme team">
+        <div class="owl-carousel owl-theme team content">
             <div class="item">
                 <img class=" team_photo" src="img/team/1.jpeg">
                 <div class="testimonial_name">
                     <input type="checkbox" class="read-more-state" id="team1">
-                    <p class="read-more-wrap">Dr. Richa Kapoor Miglani<br>
+                    <p class="read-more-wrap"><b>Dr. Richa Kapoor Miglani</b><br>
                         Dr. Richa Kapoor Miglani had done her Masters in Periodontology.<span class="read-more-target">  Dr. Richa Kapoor Miglani had done her Masters in Periodontology. She specializes in treatment and diagnosis of gum diseases, cosmetic gum surgery, gum depigmentation treatment, bone grafting and also Laser assisted surgeries. She has received the National Award Famdent Excellence in Dentistry Award, Indian Health Professional Award. She also mentors dental practitioners through her academy PERIO ESTHETICS.</span>
                     </p>
                     <label for="team1" class="read-more-trigger"></label>
@@ -178,7 +166,7 @@
                 <img class="team_photo" src="img/team/2.jpeg">
                 <div class="testimonial_name">
                     <input type="checkbox" class="read-more-state" id="team2">
-                    <p class="read-more-wrap">Dr. Nirali Mehta Ajmera <br>
+                    <p class="read-more-wrap"><b>Dr. Nirali Mehta Ajmera </b><br>
                         Dr. Nirali Mehta Ajmera , completed her Bachelor of Dental Surgery (BDS) from Dr DY Patil Dental College <span class="read-more-target">   ,Mumbai 2011
                         She then continued to pursue her Master of Dental Surgery (MDS) in Dy Patil Dental College, Mumbai</span>
                     </p>
@@ -190,7 +178,7 @@
 
                     <div class="testimonial_name">
                         <input type="checkbox" class="read-more-state" id="team3">
-                        <p class="read-more-wrap">Dr. Irshad Chaudhary <br>
+                        <p class="read-more-wrap"><b>Dr. Irshad Chaudhary</b><br>
                         Dr. Irshad Chaudhary , completed his Bachelor of Dental Surgery from Dr D y Patil Dental college <span class="read-more-target">, completed his Bachelor of Dental Surgery from Dr D y Patil Dental college, Pune in 2010. He then worked as General Dentist In Bandra Mumbai till March 2012 .He then completed his Master Of Dental Surgery (MDS) In Oral & Maxillofacial Suregry & Implantology from Dr D Y Patil Dental College Pune in 2015 .</span>
                         </p>
                         <label for="team3" class="read-more-trigger"></label>
@@ -202,7 +190,7 @@
 
                         <div class="testimonial_name">
                             <input type="checkbox" class="read-more-state" id="team4">
-                            <p class="read-more-wrap">Dr. Sanket R. Sanghavi<br>
+                            <p class="read-more-wrap"><b>Dr. Sanket R. Sanghavi</b><br>
                             Dr. Sanket R. Sanghavi, completed his Bachelor of Dental Surgery from MGV dental college, Nashik in 2009.<span class="read-more-target"> He then completed his Master of Dental Surgery (MDS) in Orthodontics and Dentofocial Orthopedics from Dr. D Y Patil dental college and hospital,Pune in 2014 and excelled in his academic and clinical work with a first rank.</span>
                             </p>
                             <label for="team4" class="read-more-trigger"></label>            
@@ -212,7 +200,7 @@
                     <img class="img-responsive team_photo" src="img/team/5.jpeg">
                     <div class="testimonial_name">
                         <input type="checkbox" class="read-more-state" id="team5">
-                        <p class="read-more-wrap">Dr. Neelam S. Sanghavi<br>
+                        <p class="read-more-wrap"><b>Dr. Neelam S. Sanghavi</b><br>
                     Dr. Neelam S. Sanghavi, completed her Bachelor of Dental Surgery from Dr. D Y Patil dental college and hospital,Pune in 2009.<span class="read-more-target">She then completed her Master of Dental Surgery (MDS) in prosthodontics from the same institute in 2014 with a gold medal in the subject.</span>
                         </p>
                         <label for="team5" class="read-more-trigger"></label>            
@@ -224,11 +212,11 @@
     </section>
 <section id="contact">
     <div class="blue_belt " style="text-align:center;">
-            <span class="strong_font">REACH</span>US AT
+            <div class="heading">Reach <span class="heading2"> Us At</span></div>
     </div>
     <div style="position:relative;text-align: center">
         <div id="bg"></div> 
-        <div class="contact_form">
+        <div class="contact_form special_bg_contact">
             
             <div class="container">
                 <form action="contact.php" id="contact-form" method="post">
@@ -254,6 +242,7 @@
     <!-- form -->
     <!-- testimonials -->
 <section id="testimonial">
+      <div class="heading">  Testimonial <span class="heading2"></span></div>
     <div class="container-fluid" style="text-align: center;">
         <form>
             <div class="testimonial owl-carousel owl-theme ">
@@ -317,72 +306,22 @@
                         </div>
                 </div>
             </div>
-            <a href="testimonial.html" class="btn btn-primary" style="margin:20px;">ADD TESTIMONIAL</a>
+            <a href="testimonial.php" class="btn btn-primary" style="margin:20px;">ADD TESTIMONIAL</a>
         </form>
     </div>
 </section>
     <div class="carousel_logo">
         <div class="container" >
             <div class="owl-carousel owl-theme owl2">
-                <div class="item">
-                    <img class="" src="img/companies/1.jpg">
-                </div>
-                <div class="item">
-                    <img class="" src="img/companies/2.jpg">
-                </div>
-                <div class="item">
-                        <img class="" src="img/companies/3.jpg">
-                </div>
-                <div class="item">
-                        <img class="" src="img/companies/4.jpg">
-                </div>
-                <div class="item">
-                        <img class="" src="img/companies/5.jpg">
-                </div>
-                <div class="item">
-                        <img class=" " src="img/companies/6.jpg">
-                </div>
-                <div class="item">
-                        <img class=" " src="img/companies/7.jpg">
-                </div>
-                <div class="item">
-                        <img class=" " src="img/companies/9.jpg">
-                </div>
-                <div class="item">
-                        <img class=" " src="img/companies/10.jpg">
-                </div>
-                <div class="item">
-                        <img class=" " src="img/companies/11.jpg">
-                </div>
-                <div class="item">
-                        <img class=" " src="img/companies/12.jpg">
-                </div>
-                <div class="item">
-                        <img class=" " src="img/companies/13.jpg">
-                </div>
-                <div class="item">
-                        <img class=" " src="img/companies/14.jpg">
-                </div>
-                <div class="item">
-                        <img class=" " src="img/companies/15.jpg">
-                </div>
-                <div class="item">
-                        <img class=" " src="img/companies/16.jpg">
-                </div>
-                <div class="item">
-                        <img class=" " src="img/companies/17.jpg">
-                </div>
-                <div class="item">
-                        <img class=" " src="img/companies/18.jpg">
-                </div>
-                <div class="item">
-                        <img class=" " src="img/companies/19.jpg">
-                </div>
+                <?php for($i=1;$i<=18;$i++){?>
+                    <div class="item">
+                        <img class="" src="img/companies/<?php echo $i?>.jpg">
+                    </div>
+                <?php }?>
+              
             </div>
         </div>  
-        
-
-    </div>
+      </div>
      <?php include 'footer.php';?>
   </div>
 </body>
@@ -494,7 +433,7 @@
         svg.setAttribute('width',window.innerWidth);
         svg.setAttribute('height',window.innerHeight);
         document.querySelector('#bg').appendChild(svg);
-    
+        
         var unitSize = (window.innerWidth+window.innerHeight)/20;
         numPointsX = Math.ceil(window.innerWidth/unitSize)+1;
         numPointsY = Math.ceil(window.innerHeight/unitSize)+1;

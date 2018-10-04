@@ -1,0 +1,207 @@
+@media screen  and (max-width:768px)
+{
+    .bookanappointed
+    {
+        font-size:16px;
+    }
+    .testimonial{
+        height: 100%;
+    }
+    .testimonial .img-circle{
+        margin: auto;
+        width: 150px !important;
+    }
+    .header{
+        padding:0px;
+    }
+    .navbar-collapse
+    {
+        margin:0px;
+    }
+    .navbar_phone
+    {
+        display: block;
+        width:100%;
+        color:white;
+        background-color:#050156eb;
+        text-align: center;
+           padding:5px 0px;
+    }
+    .navbar_phone a{
+
+        color:white;
+    }
+    #mySidenav
+    {
+        display: block;
+        
+    }
+    .navbar-brand
+    {
+        display: none !important;
+    }
+    .navbar-toggler:active
+    {
+        background-color: #ffffffbf;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #02002df7;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 20px;
+        color:#ffcb50!important;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+    
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    .award_section
+    {
+        display:none !important;
+    }
+    .address_section{
+        display:none;
+    }
+    .desktop_logo
+    {
+        display:none !important;
+    }
+    .mobile_logo{
+        display: block;
+        width:150px;
+        float: right;
+        margin: 5%;
+    }
+    .navbar{
+        padding-bottom: 8px !important;
+    }
+    .navbar-toggler
+    {
+        background-color: transparent;
+        position: absolute;
+        left: 0px;
+        cursor: pointer;
+    }
+    .icon-bar
+    {
+        width: 35px;
+        height: 3px;
+        background-color: black;
+        margin: 8px 0;
+    }
+    .icon_div:nth-child(odd)
+    {
+        clear:left;
+    }
+    /* hexagon design */
+
+    .hexagon
+    {
+        width: 140px;
+        height: 65px;
+    }
+    .hexagon:before, .hexagon:after
+    {
+        border-left: 70px solid transparent;
+        border-right: 70px solid transparent;
+    }
+    .first1{
+            top:10px;
+            left:5%;
+    }
+    .second{
+        top: 10px;
+        right: 5%;
+        left: auto;
+    }
+    .third{
+        top: 170px;
+        left: 5%;
+    }
+    .fourth{
+        top: 170px;
+        left: auto;
+        right:5%;
+    }
+    .fifth{
+        top: 310px;
+        left: 30%;
+    }
+    .first1::before {
+        border-bottom: 40.74px solid #0368ff9e
+        
+    }
+    .first1::after{
+        border-top:  40.74px solid  #0368ff9e
+    }
+    .second::before {
+        border-bottom: 40.74px solid  #11abb3c7
+        
+    }
+    .second::after{
+        border-top: 40.74px solid  #11abb3c7
+    }
+    
+    .third::before {
+        border-bottom: 40.74px solid  #3f00a5c7
+        
+    }
+    .third::after{
+        border-top: 40.74px solid  #3f00a5c7
+    }
+    .fourth::before {
+        border-bottom: 40.74px solid  #47ffcc99
+        
+    }
+    .fourth::after{
+        border-top: 40.74px solid  #47ffcc99
+    }
+    .fifth::before {
+        border-bottom: 40.74px solid  #7016ffb3
+        
+    }
+    .fifth::after{
+        border-top: 40.74px solid  #7016ffb3
+    }
+    .hexa_text
+    {
+        font-size:18px;
+        top:5%;
+    }
+    .hexa_text a{
+        color:white;
+    }
+    
+    /* hexagon design ends */
+    /* contact form design */
+    .contact_form .input-field input, .contact_form .input-field textarea
+    {
+        width:100%;
+    }
+    #footer ul{
+        padding:0px;
+    }
+    
+}

@@ -8,7 +8,7 @@
                     </div>
                     <img src="img/logofinal.png" class="desktop_logo logo img-responsive  ">
                     <span class="address_section">
-                        <div style="font-size: 14px; color:white;"><span style="font-size:20px;font-weight:600;"><a href="tel:02226255810">Call us: 022 2625 5810</a> </span><br>101 Shafi Mansion, Irla, Vile Parle West,<br> Mumbai,Maharashtra 400056
+                        <div ><span ><a href="tel:02226255810" style="color:black;">Call us: 022 2625 5810</a> </span><br>101 Shafi Mansion, Irla, Vile Parle West,<br> Mumbai,Maharashtra 400056
                         </div>
                     </span>
                 </div>
@@ -26,10 +26,10 @@
                     <div class="navbar-collapse " >
                         <div id="nav" class="navbar-nav mr-auto visible-lg visible-md hidden-xs">
                             <div class="nav-item active">
-                                <a class="nav-link" href="home.html">Home</a>
+                                <a class="nav-link" href="home.php">Home</a>
                             </div>
                             <div class="nav-item">
-                                <a class="nav-link" href="#">Treatment + </a>
+                                <a class="nav-link" href="#">Treatment </a>
                                 <div class="sub-nav">
                                     <div class="sub_item"><a href="dentaloverlay.html">Dental Inlay and Overlays</a></div>
                                     <div class="sub_item"><a href="dentalimplants.html">Dental Implants</a></div>
@@ -51,7 +51,7 @@
                                 <a class="nav-link scroll" id="scrolltoteam">Team</a>
                             </div>
                             <div class="nav-item">
-                                <a class="nav-link scroll"  id="scrolltotestimonial">testimonial</a>
+                                <a class="nav-link scroll"  id="scrolltotestimonial">Testimonials</a>
                             </div>
                             <div class="nav-item">
                                 <a class="nav-link scroll" href="#">Offers</a>
