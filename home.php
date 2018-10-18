@@ -246,65 +246,61 @@
     <div class="container-fluid" style="text-align: center;">
         <form>
             <div class="testimonial owl-carousel owl-theme ">
-                <div class="row item">
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-                        <img src="img/team/placeholder.png" class="img-circle img-responsive">
-                    </div>
-                    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
-                        <div class="testimonial_name">
-                            <input type="checkbox" class="read-more-state" id="post1">
-                            <p class="read-more-wrap">  1.  I am delighted to have known the doctors at Studio 32. They were of tremendous help in my time of pain and stress. I have always been very scared when it comes to visiting doctors. <span class="read-more-target">  But they have not only cured my tooth problems but also overcome my fear of visiting dentists. They made me so comfortable every time and regularly followed up after every appointment that it felt really nice. Also they are so clean and hygienic that too tends to build trust as soon as you see how organized and professional everything is at their clinic.
-                                I do not think twice before going ahead with any decision regarding my dental problems if they have recommended it. I trust them and would recommend all my family members to visit them for any oral/dental issues even if it is just for consulting.They are the right and most honest team I have ever met. All the best to you. Thanks a ton!</span>
-                            </p>
-                            <label for="post1" class="read-more-trigger"></label>
-                        </div>
-                    </div>
-                </div>
-                <div class="row item">
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 ">
-                        <img src="img/team/placeholder.png" class="img-circle img-responsive">
-                    </div>
-                    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
-                            <div class="testimonial_name">
-                                    <input type="checkbox" class="read-more-state" id="post2">
-                                    <p class="read-more-wrap">  2. I am delighted to have known the doctors at Studio 32. They were of tremendous help in my time of pain and stress. I have always been very scared when it comes to visiting doctors. <span class="read-more-target">  But they have not only cured my tooth problems but also overcome my fear of visiting dentists. They made me so comfortable every time and regularly followed up after every appointment that it felt really nice. Also they are so clean and hygienic that too tends to build trust as soon as you see how organized and professional everything is at their clinic.
-                                        I do not think twice before going ahead with any decision regarding my dental problems if they have recommended it. I trust them and would recommend all my family members to visit them for any oral/dental issues even if it is just for consulting.They are the right and most honest team I have ever met. All the best to you. Thanks a ton!</span>
-                                    </p>
-                                    <label for="post2" class="read-more-trigger"></label>
+                <!-- connection -->
 
-                                </div>
-                        </div>
-                </div>
-                <div class="row item">
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-                        <img src="img/team/placeholder.png" class="img-circle img-responsive">
-                    </div>
-                    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
-                            <div class="testimonial_name">
-                                    <input type="checkbox" class="read-more-state" id="post3">
-                                    <p class="read-more-wrap">  3. I am delighted to have known the doctors at Studio 32. They were of tremendous help in my time of pain and stress. I have always been very scared when it comes to visiting doctors. <span class="read-more-target">  But they have not only cured my tooth problems but also overcome my fear of visiting dentists. They made me so comfortable every time and regularly followed up after every appointment that it felt really nice. Also they are so clean and hygienic that too tends to build trust as soon as you see how organized and professional everything is at their clinic.
-                                        I do not think twice before going ahead with any decision regarding my dental problems if they have recommended it. I trust them and would recommend all my family members to visit them for any oral/dental issues even if it is just for consulting.They are the right and most honest team I have ever met. All the best to you. Thanks a ton!</span>
-                                    </p>
-                                    <label for="post3" class="read-more-trigger"></label>
+                 <?php 
+                $servername = "localhost";
+                $username="root";
+                $password="";
+                $mydb="test";
+                $conn = mysqli_connect($servername, $username, $password, $mydb);
 
-                                </div>
-                        </div>
-                </div>
-                <div class="row item">
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-                        <img src="img/team/placeholder.png" class="img-circle img-responsive">
-                    </div>
-                    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
-                            <div class="testimonial_name">
-                                    <input type="checkbox" class="read-more-state" id="post4">
-                                    <p class="read-more-wrap">  4. I am delighted to have known the doctors at Studio 32. They were of tremendous help in my time of pain and stress. I have always been very scared when it comes to visiting doctors. <span class="read-more-target">  But they have not only cured my tooth problems but also overcome my fear of visiting dentists. They made me so comfortable every time and regularly followed up after every appointment that it felt really nice. Also they are so clean and hygienic that too tends to build trust as soon as you see how organized and professional everything is at their clinic.
-                                        I do not think twice before going ahead with any decision regarding my dental problems if they have recommended it. I trust them and would recommend all my family members to visit them for any oral/dental issues even if it is just for consulting.They are the right and most honest team I have ever met. All the best to you. Thanks a ton!</span>
-                                    </p>
-                                    <label for="post4" class="read-more-trigger"></label>
+                // Check connection
+                if (!$conn) {
+                    die("Connection failed: " . mysqli_connect_error());
+                }
+                else
+                {
+                // echo "connected successful , thankyou";
+                }
+                //get values froom html
 
+                $sql = "SELECT * FROM testimonial";
+                $result = $conn->query($sql);
+
+                if ($result->num_rows > 0) {
+                    // output data of each row
+                    while($row = $result->fetch_assoc()) {
+                        ?>
+                            <div class="row item">
+                                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                                    <img src="img/team/placeholder.png" class="img-circle img-responsive">
+                                  <div class="testimonial_user_name">  <?php echo $row["name"];?></div>
                                 </div>
-                        </div>
-                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                                    <div class="testimonial_name">
+                                        <!-- <input type="checkbox" class="read-more-state" id="post1">
+
+                                        <p class="read-more-wrap">
+                                          1.  I am delighted to have known the doctors at Studio 32. They were of tremendous help in my time of pain and stress. I have always been very scared when it comes to visiting doctors.
+                                           <span class="read-more-target">  But they have not only cured my tooth problems but also overcome my fear of visiting dentists. They made me so comfortable every time and regularly followed up after every appointment that it felt really nice. Also they are so clean and hygienic that too tends to build trust as soon as you see how organized and professional everything is at their clinic.
+                                            I do not think twice before going ahead with any decision regarding my dental problems if they have recommended it. I trust them and would recommend all my family members to visit them for any oral/dental issues even if it is just for consulting.They are the right and most honest team I have ever met. All the best to you. Thanks a ton!</span>
+                                        </p> -->
+                                        <?php echo $row["message"]. "<br>"; ?>
+
+                                     <!--    <label for="post1" class="read-more-trigger"></label> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                           <?php
+
+                                                           }
+                            } else {
+                                echo "0 results";
+                            }
+                            $conn->close();
+                            ?>
             </div>
             <a href="testimonial.php" class="btn btn-primary" style="margin:20px;">ADD TESTIMONIAL</a>
         </form>
