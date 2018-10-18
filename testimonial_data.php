@@ -42,7 +42,6 @@ $mobile="";
 
 $upload_success="";
 $img_src="";
-
 $name = $_POST['name'];
 $email = $_POST['email'];
 $mobile = $_POST['mobilenumber'];
