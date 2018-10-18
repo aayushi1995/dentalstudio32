@@ -59,6 +59,9 @@ if ($conn->query($sql) === TRUE)
     // session_start();
     // $_SESSION["success"] = true; 
 // header("Location: home.php?success=true");
+	/************************************************************/
+	/*****************  SEND EMAIL TO STUDIO 32 FROM CUSTOMER ******************/
+	/************************************************************/
 ini_set( 'display_errors', 1 );
     error_reporting( E_ALL );
     $from = $_POST['email']; 
@@ -68,6 +71,17 @@ ini_set( 'display_errors', 1 );
     $headers = "From:" . $from;
     mail($to,$subject,$message, $headers);
     echo "The email message was sent.";
+	/************************************************************/
+	/*****************  SEND EMAIL TO customer FROM studio  ******************/
+	/************************************************************/
+  	$from1 = "hello@studio32.com"; 
+    $to1 = $_POST['email']; 
+    $subject1 = "Thank You for Contacting STUDIO32";
+    $message1 = "Hello".$_POST['name'].",   Thank You for contacting studio32. Your query has been sent to the customer executive. You will be contacted as soon as possible. PLEASE NOTE: This is a automatically generated ";
+    $headers1 = "From:" . $from1;
+    mail($to1,$subject1,$message1, $headers1);
+    echo "The email message was sent.";
+
 } 
 else { 
   echo "Error: " . $sql . "<br>" . $conn->error;
