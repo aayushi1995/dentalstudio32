@@ -19,6 +19,16 @@ body{
 {
     margin:auto;
 }
+.homepage_hexagon{
+    display: none;
+}
+.fancy_polygon
+{
+    margin-left: auto;
+    width:100%;
+    max-width: 800px;
+   
+}
 .first {
     background-image: url('img/1.jpg');
     background-position: center;
@@ -202,12 +212,12 @@ color:black;
 }
 .hexagon {
     cursor: pointer;
-  display: inline-block;
-position: relative;
-width: 200px; 
-height: 115.47px;
-background-color: #64c7cc99;
-margin: 57.74px 0;
+    display: inline-block;
+    position: relative;
+    width: 200px; 
+    height: 115.47px;
+    background-color: #64c7cc99;
+    margin: 57.74px 0;
 }
 
 .hexagon:before,
@@ -220,14 +230,14 @@ border-right: 100px solid transparent;
 }
 
 .hexagon:before {
-bottom: 100%;
-border-bottom: 57.74px solid #64c7cc99;
+    bottom: 100%;
+    border-bottom: 57.74px solid #64c7cc99;
 }
 
 .hexagon:after {
-top: 100%;
-width: 0;
-border-top: 57.74px solid #64c7cc99;
+    top: 100%;
+    width: 0;
+    border-top: 57.74px solid #64c7cc99;
 }
 
 .hexa_text
@@ -340,16 +350,17 @@ border-top: 57.74px solid #64c7cc99;
     font-size: 26px;
     text-align: center;
 }
-.bookanappointed button{
+.bookanappointed .btn{
    background-color: #5c98ff;
     font-size: 18px;
     border-radius: 0px;
     border: #5c98ff;
     padding: 15px;
+    color:black;
     transition: all 0.5s ease;
  
 }
-.bookanappointed button:hover{
+.bookanappointed .btn:hover{
     background-color: black;
     color:white;
    
@@ -508,6 +519,12 @@ border-top: 57.74px solid #64c7cc99;
 .testimonial_bg
 {
     background-color: white;
+}
+.appoiment_bg
+{
+    background: #ffffff3d;
+    margin: 10%;
+    padding: 5%;
 }
 /*READ MORE LOGIC */
 .read-more-state {

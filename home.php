@@ -54,9 +54,9 @@
                 </div>
             </div>
             <div class="bookanappointed">
-       Book your free consultation with us today.
-        <button type="button"> BOOK NOW </button>
-    </div>
+               Book your free consultation with us today.
+                <a href="bookanappointement.php" class="btn" type="button"> BOOK NOW </a>
+            </div>
         </div>
     <!-- BOOK AN APPOINTMENT -->
     
