@@ -1,17 +1,36 @@
+f/* raleway-regular - latin */
 @font-face {
-    font-family: 'garamond';
-    src: url('garamond/GARA.ttf') format('truetype');
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/raleway/raleway-v12-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Raleway'), local('Raleway-Regular'),
+         url('fonts/raleway/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/raleway/raleway-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/rraleway/aleway-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/raleway/raleway-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/raleway/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+  }
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/MontserratAlternates-Regular.ttf') format('truetype');
 }
+
 body{
-    font-family: 'garamond';
+    font-family: 'Raleway';
+}
+.row
+{
+    margin-right:0px !important;
+    margin-left:0px !important;
 }
 .header{
     padding:40px 0px 0px 0px;
-    background-color:#ffffff6e !important;
+    background-color: #ffffff6e !important;
 }
 .logo
 {
-    max-width: 280px;
+    max-width: 340px;
     width:auto;
     min-width:100px;
 }
@@ -19,9 +38,7 @@ body{
 {
     margin:auto;
 }
-.homepage_hexagon{
-    display: none;
-}
+
 .fancy_polygon
 {
     margin-left: auto;
@@ -37,11 +54,14 @@ body{
 .heading{
     text-align: center;
     font-size:48px;
-    color:black;
+    color:#865b31;
 }
-.heading2{
-    color:darkblue;
+/*.heading2{
+    color:brown;
     font-weight: 600;
+}*/
+.welcome .heading{
+    margin:5% 0px;
 }
 .content{
     font-size: 16px;
@@ -54,13 +74,17 @@ body{
     background-position: center;
     background-size: cover;
     height:350px;
-    max-height:350px
+    max-height:350px;
 }
 .banner_services {
     position: relative;
   min-height: 600px;
 }
-
+.services_info li
+{
+    font-weight:800 ;
+    margin:10px;
+}
 #map {
     height: 400px;
     width: 100%;
@@ -106,11 +130,12 @@ body{
 {
     display: block;
     text-align: left;
-    padding:15px 10px;
+    padding:10px 10px;
     transition: all 0.5s ease;
     cursor: pointer;
 }
 .sub-nav .sub_item a{
+    font-size:14px;
     text-decoration: none;
     color:white;
     text-transform: uppercase;
@@ -118,13 +143,50 @@ body{
 
 .sub-nav .sub_item:hover a{
     font-weight: 800;
-color:black;
-  
+    color:black;
 }
+
 .nav-item:hover a + .sub-nav{
     visibility: visible;
     display: block;
     opacity: 1;
+}
+.sub_item:hover .sub_sub_nav
+{
+    visibility: visible;
+    display: block;
+    opacity: 1;
+}
+.sub_sub_nav
+{
+    opacity:0;
+    display:none;
+    top: 0px;
+    height: 100%;
+    position: absolute;
+    left: 283px;
+    background: #925c25eb;
+    width: 300px;
+    padding: 10px;
+    border-left:1px solid rgba(77, 41, 0, 0.411);
+}
+.sub_sub_item a
+{
+    font-size:12px;
+    color:white !important;
+}
+.sub_sub_item
+{
+    margin:5px 0px;
+}
+.sub_sub_nav:hover{
+    visibility: visible;
+    display: block;
+    opacity: 1;
+}
+.sub_sub_item a:hover
+{
+    color:black !important;
 }
 .main_container .navbar-brand {
     float: none;
@@ -133,7 +195,9 @@ color:black;
     text-align: center;
     height: auto;
 }
-
+.sub_item > a .glyphicon{
+    float:right !important;
+}
 #demo img {
     width: 100%;
 }
@@ -180,7 +244,7 @@ color:black;
 }
 .award_text
 {
-    font-size:20px;
+    font-size:18px;
     color:black;
     font-weight: 600;
 }
@@ -196,7 +260,7 @@ color:black;
     margin: 10px 5% 0px 0px;
     color:black;
     font-weight:600;
-    font-size:20px;
+    font-size:14px;
 }
 .welcome
 {
@@ -210,6 +274,7 @@ color:black;
     font-weight: 600;
     text-align: center;
 }
+
 .hexagon {
     cursor: pointer;
     display: inline-block;
@@ -222,11 +287,11 @@ color:black;
 
 .hexagon:before,
 .hexagon:after {
-content: "";
-position: absolute;
-width: 0;
-border-left: 100px solid transparent;
-border-right: 100px solid transparent;
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
 }
 
 .hexagon:before {
@@ -248,7 +313,7 @@ border-right: 100px solid transparent;
     position: absolute;
     display: block;
     width: 100%;
-    top: 10%;
+    top: 20%;
     -moz-osx-font-smoothing: grayscale;
     transition-duration: 0.3s;
     transition-property: transform;
@@ -258,88 +323,104 @@ border-right: 100px solid transparent;
     color:white;
 }
 .hexa_text a:hover{
-    
     text-decoration: none;
 }
+
 /* hexagon design */
 .hexa_text:hover{
     transform: scale(1.1);
     font-size: 20px;
-  
 }
+
 .first1
 {
     position: absolute;
-    background-color: #0368ff5e;
+    background-color: #0368ff61;
     top: 5%;
-    left: 20%;
+    left: 40%;
 }
 
 .first1::before {
-    border-bottom: 57.74px solid  #0368ff5e
-    
+    border-bottom: 57.74px solid  #0368ff61;
 }
+
 .first1::after{
-    border-top: 57.74px solid  #0368ff5e
+    border-top: 57.74px solid  #0368ff61;
 }
 
 .second
 {
     position: absolute;
-    background-color: #11abb3c7;
-    left: 30%;
-    top: 35%;
+    background-color: #11abb394;
+    left: 47.5%;
+    top: 34%;
 }
+
 .second::before {
-    border-bottom: 57.74px solid  #11abb3c7
-    
+    border-bottom: 57.74px solid  #11abb394;
 }
+
 .second::after{
-    border-top: 57.74px solid  #11abb3c7
+    border-top: 57.74px solid  #11abb394;
 }
 
 .third
 {
     position: absolute;
-    background-color: #3f00a575;
-    left: 40%;
+    background-color: #010c5f8c;
+    left: 55%;
     top: 5%;
 }
 .third::before {
-    border-bottom: 57.74px solid  #3f00a575
-    
+    border-bottom: 57.74px solid  #010c5f8c;
 }
+
 .third::after{
-    border-top: 57.74px solid  #3f00a575
+    border-top: 57.74px solid  #010c5f8c;
 }
 .fourth
 {
     position: absolute;
-    background-color: #47ffcc99;
-    top: 35%;
-    right: 35%;
+    background-color: #37a8ea73;
+    top: 34%;
+    right: 22.7%;
+
 }
 .fourth::before {
-    border-bottom: 57.74px solid  #47ffcc99
+    border-bottom: 57.74px solid  #37a8ea73;
     
 }
 .fourth::after{
-    border-top: 57.74px solid  #47ffcc99
+    border-top: 57.74px solid  #37a8ea73;
 }
 
 .fifth
 {
     position: absolute;
-    background-color: #7016ffb3;
+    background-color: #0591c38c;
     top: 5%;
-    right: 25%;
+    right: 15.2%;
 }
 .fifth::before {
-    border-bottom: 57.74px solid  #7016ffb3
+    border-bottom: 57.74px solid  #0591c38c;
     
 }
 .fifth::after{
-    border-top: 57.74px solid  #7016ffb3
+    border-top: 57.74px solid  #0591c38c;
+}
+.sixth
+{
+    position: absolute;
+    background-color: #0038b191;
+    top: 34%;
+    right: 7.8%;
+}
+.sixth::before {
+    border-bottom: 57.74px solid  #0038b191;
+    
+}
+.sixth::after{
+    border-top: 57.74px solid  #0038b191;
 }
 
 .bookanappointed
@@ -499,9 +580,18 @@ border-right: 100px solid transparent;
     color:white !important;
     font-size: 16px !important;
 }
+/* testimonial form */
+
+.testimonial_block
+{
+    margin:auto;
+    margin-left:auto !important;
+    margin-right:auto !important;
+}
 .testimonial_form .input-field input, .contact_form .input-field textarea{
     color:black ;
     font-size:18px !important;
+    font-weight:800 !important;
 }
 .testimonial_form{
     text-align: center;
@@ -514,7 +604,7 @@ border-right: 100px solid transparent;
 .testimonial
 {
     margin-top:3%;
-    height: 300px;
+    height: 400px;
 }
 .testimonial_bg
 {
@@ -522,7 +612,7 @@ border-right: 100px solid transparent;
 }
 .appoiment_bg
 {
-    background: #ffffff3d;
+    background: #ffe2bb66;
     margin: 10%;
     padding: 5%;
 }
@@ -572,9 +662,14 @@ border-right: 100px solid transparent;
 
 #footer
 {
-    background-color: #b7c4ff;
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 5% 0px;
     border-top:2px solid darkblue;
+}
+#footer li a{
+    color:white !important;
 }
 #footer ul{
     list-style: none;
@@ -584,13 +679,10 @@ border-right: 100px solid transparent;
     font-size: 16px;
 }
 
-#footer .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
+#footer .fab {
+    font-size: 32px;
+    margin:10px;
+    color:white;
   }
   
   #footer  .fa:hover {
@@ -608,8 +700,17 @@ border-right: 100px solid transparent;
   font-size:16px !important;
 
 }
+#testimonial{
+    background-color:#03121a;
+}
+
 .testimonial_form ::-webkit-input-placeholder {
   color: lightgrey !important;
+}
+.appoiment_bg input::-webkit-input-placeholder 
+{
+    color:#050556 !important;
+    fot-weight:800;
 }
 .testimonial_form .input-field input, .testimonial_form  .input-field textarea
 {
@@ -620,7 +721,76 @@ border-right: 100px solid transparent;
     color:black;
     font-size: 14px;
 }
+.testimonial_user_name {
+    font-size:18px;
+    font-weight:800;
+    color:white;
+}
+.testimonial_block {
+    padding: 2%;
+   color: white;
+    width: 60%;
+    margin: auto;
+    background-color:transparent;
+}
 #fileToUpload
 {
     margin: auto;
 }
+
+/* address section */
+#address
+{
+    background: #06212f;  /* fallback for old browsers */
+   color:white;
+   padding:0px 0px 5% 0px;
+}
+#address h2{
+    margin:0px;
+    padding:10px;
+}
+
+/* Carousel navigation*/
+.owl-nav
+{
+    position: absolute;
+    top:20%;
+    width:100%;
+}
+.owl-nav .owl-prev, .owl-nav .owl-next
+{
+    position: absolute;
+    color:white !important;
+    font-size:30px !important;
+}
+#team .owl-nav .owl-prev,#team  .owl-nav .owl-next
+{
+    color:black !important;
+    font-size: 50px !important
+}
+
+.owl-nav .owl-prev
+{
+    left:10%;
+}
+.owl-nav .owl-next
+{
+    right:10%;
+}
+
+#team .owl-nav .owl-prev
+{
+    left:0px;
+}
+
+#team  .owl-nav .owl-next
+{
+    right:0px;
+}
+
+
+
+
+
+
+

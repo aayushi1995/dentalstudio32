@@ -1,5 +1,16 @@
+@media screen and (min-width:769px) and (max-width:1300px) {
+    .award_section
+    {
+        font-size: 14px !important;
+    }
+
+}
 @media screen  and (max-width:768px)
 {
+    .heading
+    {
+        font-size: 32px !important;
+    }
     .bookanappointed
     {
         font-size:16px;
@@ -13,6 +24,7 @@
     }
     .header{
         padding:0px;
+        background-color: transparent !important;
     }
     .navbar-collapse
     {
@@ -20,21 +32,26 @@
     }
     .navbar_phone
     {
+        font-size:16px;
         display: block;
         width:100%;
         color:white;
         background-color:#050156eb;
         text-align: center;
-           padding:5px 0px;
+        padding:5px 0px;
     }
     .navbar_phone a{
 
         color:white;
     }
+    .socialmedia a
+    {
+        font-size:30px;
+        margin:0px 10px;
+    }
     #mySidenav
     {
         display: block;
-        
     }
     .navbar-brand
     {
@@ -51,17 +68,17 @@
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: #02002df7;
+        background-color: #00012de8;
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
     }
     
     .sidenav a {
-        padding: 8px 8px 8px 32px;
+        padding: 8px 8px 8px 16px;
         text-decoration: none;
         font-size: 20px;
-        color:#ffcb50!important;
+        color:#ffcb50 !important;
         display: block;
         transition: 0.3s;
     }
@@ -69,13 +86,33 @@
     .sidenav a:hover {
         color: #f1f1f1;
     }
-    
+    #submenu .nav-link {
+        font-size:14px;
+    }
+
+    .submenu_of_submenu
+    {
+        margin-left:10%;
+    }
+    .submenu_of_submenu a
+    {
+        font-size:12px !important;
+        padding:8px !important;
+    }
     .sidenav .closebtn {
         position: absolute;
         top: 0;
         right: 25px;
         font-size: 36px;
         margin-left: 50px;
+    }
+    #mySidenav .glyphicon-plus
+    {
+        float:right;
+    }
+    #mySidenav .col-xs-10, #mySidenav .col-xs-2
+    {
+        padding:0px !important;
     }
     .award_section
     {
@@ -128,72 +165,88 @@
         border-right: 70px solid transparent;
     }
     .first1{
-            top:10px;
-            left:5%;
+            top:10px !important;
+            left:5% !important;
     }
     .second{
-        top: 10px;
-        right: 5%;
-        left: auto;
+        top: 10px !important;
+        right: 5% !important;
+        left: auto !important;
     }
     .third{
-        top: 170px;
-        left: 5%;
+        top: 170px !important;;
+        left: 5% !important;;
     }
     .fourth{
-        top: 170px;
-        left: auto;
-        right:5%;
+        top: 170px !important;;
+        left: auto !important;;
+        right:5% !important;;
     }
     .fifth{
-        top: 310px;
-        left: 30%;
+        top: 330px !important;;
+        left: 5% !important;;
+    }
+    .sixth{
+        top: 330px !important;;
+        left:auto !important;;
+        right: 5% !important;;
+    }
+    .first{
+        background-position: left !important;
     }
     .first1::before {
-        border-bottom: 40.74px solid #0368ff9e
+        border-bottom: 40.74px solid #0368ff61;
         
     }
     .first1::after{
-        border-top:  40.74px solid  #0368ff9e
+        border-top:  40.74px solid  #0368ff61;
     }
     .second::before {
-        border-bottom: 40.74px solid  #11abb3c7
+        border-bottom: 40.74px solid  #11abb394;
         
     }
     .second::after{
-        border-top: 40.74px solid  #11abb3c7
+        border-top: 40.74px solid  #11abb394;
     }
     
     .third::before {
-        border-bottom: 40.74px solid  #3f00a5c7
+        border-bottom: 40.74px solid  #010c5f8c
         
     }
     .third::after{
-        border-top: 40.74px solid  #3f00a5c7
+        border-top: 40.74px solid  #010c5f8c
     }
     .fourth::before {
-        border-bottom: 40.74px solid  #47ffcc99
+        border-bottom: 40.74px solid  #37a8ea73
         
     }
     .fourth::after{
-        border-top: 40.74px solid  #47ffcc99
+        border-top: 40.74px solid  #37a8ea73
     }
     .fifth::before {
-        border-bottom: 40.74px solid  #7016ffb3
+        border-bottom: 40.74px solid  #0591c38c
         
     }
     .fifth::after{
-        border-top: 40.74px solid  #7016ffb3
+        border-top: 40.74px solid  #0591c38c
+    }
+    .sixth::before {
+        border-bottom: 40.74px solid  #0038b191
+        
+    }
+    .sixth::after{
+        border-top: 40.74px solid  #0038b191
     }
     .hexa_text
     {
-        font-size:18px;
+        font-size:14px;
         top:5%;
     }
-    .hexa_text a{
-        color:white;
+    .hexa_text:hover{
+        transform: scale(1.1);
+        font-size: 16px;
     }
-    
+
     /* hexagon design ends */
     /* contact form design */
     .contact_form .input-field input, .contact_form .input-field textarea
@@ -203,5 +256,19 @@
     #footer ul{
         padding:0px;
     }
-    
+    .testimonial_block
+    {
+        width:90%;
+    }
+    #footer .row div:nth-child(3)
+    {
+        clear:left;
+    }
+    #footer .row div:last-child .fab{
+        margin:5px;
+    }
+    .gallery_bg
+    {
+        padding:0px;
+    }
 }

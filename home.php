@@ -13,44 +13,49 @@
         <div class="first">
             <?php include 'navbar.php';?>
             <!-- main header starts -->
-         
+            
             <!-- main header ends  -->
             <!-- banner services -->
             <div class="banner_services">
                 <div class="homepage_hexagon">
                     <div class="first1 hexagon">
                       <div class="hexa_text">
-                         <a href="teethwhitening.html">
+                         <a href="teethwhitening.php">
                                 Teeth <br>
                                 whitening
                          </a> </div> 
                     </div>
                     <div class="second hexagon">
                             <span class="hexa_text">
-                            <a href="smilemakeover.html">
+                            <a href="smilemakeover.php">
                                     Smile <br>
                                   Makeover </a></span>
                     </div>
                     <div class="third hexagon">
                             <span class="hexa_text">
-                            <a href="clearaligners.html">
+                            <a href="clearaligners.php">
                                     Invisible <br>
                                   Braces</a> </span>
                     </div>
                     <div class="fourth hexagon">
                             <span class="hexa_text">
-                            <a href="fullmouth.html">
+                            <a href="fullmouth.php">
                                     Full Mouth <br>
                                   Recontruction</a> </span>
                     </div>
                     <div class="fifth hexagon">
                             <span class="hexa_text">
-                                <a href="botoxfillers.html">
+                                <a href="botoxfillers.php">
                                     Botox & <br>
                                   Fillers</a>   
                                 </span>
                     </div>
-
+                    <div class="sixth hexagon">
+                            <span class="hexa_text">
+                                <a href="dentalimplants.php">
+                                    Dental Implantations</a>   
+                                </span>
+                    </div>
                 </div>
             </div>
             <div class="bookanappointed">
@@ -82,20 +87,39 @@
         <div class="row ">
             <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
                 <div class="content">
-                      <div class="heading">Welcome to <span class="heading2">Studio 32</span>!</div>
-                        At Studio 32, we are committed to providing world-class dental care along with excellent customer service to our patients. We are dedicated to delivering the very best results, whether it is customizing the perfect smile, reconstructing the entire mouth or helping you achieve flawless facial contours; and all in a comfortable and relaxed setting. Supporting you every step of the way from planning to post-treatment care, our team of experts specialize in making your experience a pain-free, pampering wellness visit.<br>
-                        <div style="margin:5% 0px;border-top:1px solid #508dfd;">When you visit Studio 32, you will see and feel the difference as pointed out and appreciated by our patients in their wonderful testimonials. Quite simply, we love what we do and it shows. With STUDIO32 you are definitely guaranteed a ‘wow’ experience!!</div> 
+                    <div class="heading"> <span class="heading2"><b>Welcome to Studio 32</b></span>!</div>
+                        At Studio 32, we are committed to providing world-class dental care along with excellent customer service to our patients. We are dedicated to delivering the very best results, whether it is customizing the perfect smile, reconstructing the entire mouth or helping you achieve flawless facial contours; and all in a comfortable and relaxed setting. Supporting you every step of the way from planning to post-treatment care, our team of experts specialize in making your experience a pain-free, pampering wellness visit.<br><br>
+                        When you visit Studio 32, you will see and feel the difference as pointed out and appreciated by our patients in their wonderful testimonials. Quite simply, we love what we do and it shows. With STUDIO32 you are definitely guaranteed a ‘wow’ experience!
+                </div> 
+                <div class="heading" ><span class="heading2"><b>Our Mission and Vision </b></span></div>
+                <div class="content">
+                    <ul>
+                        <li>To be the leader in Comprehensive Oral health Care and Facial Aesthetic treatments.</li>
+                        <li>To cater to local and International patients with highest standards of quality care provided by highly specialized Doctors.</li>
+                        <li>To collaborate and establish Centers in various parts of the world to promote best and latest Dental and Facial aesthetic treatments.</li>
+                    </ul>
+                </div>
+                <div class="heading"><span class="heading2"><b>Our Values</b></span></div>
+                <div class="content">
+                <ul>
+                    <li>CURATE: We customize treatments plans and treatment packages to cater individuals. </li>
+                    <li>CHANGE: We welcome change, encourage and implement latest and more efficient treatments. </li>
+                    <li>COLLABORATE: Expert skilled Clinicians collaborate and share knowledge function as TEAM to the benefit of the patient </li>
+                    <li>CONSISTENT: We constantly strive to achieve and maintain the best standards in treatment and patient experience </li>  
+                </ul>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-               <img class="img-responsive" src="img/team/main.jpg">
+               <img class="img-responsive hidden-xs hidden-sm" src="img/team/intro_picture.png">
             </div>
         </div>
+
+
     </div>
     <!-- why choose us -->
     <div class="container-fluid">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 blue_belt">
-               <div class="heading"> Why <span class="heading2">Choose Us ? </span></div>
+               <div class="heading"><span class="heading2"> Why Choose Us ? </span></div>
         </div>
         <div id="whychooseus" class="row content">
             
@@ -148,7 +172,7 @@
     <!-- team   -->
     <section id="team">
         <div class="blue_belt">
-                <div class="heading">  Meet <span class="heading2">the Team </span></div>
+                <div class="heading"> <span class="heading2">  Meet The Team </span></div>
         </div>
         <div class="container">
         <div class="owl-carousel owl-theme team content">
@@ -207,12 +231,35 @@
                     </div> 
                 
                 </div>
-            </div>  
+                <div class="item">
+                    <img class="img-responsive team_photo" src="img/team/6.jpeg">
+                    <div class="testimonial_name">
+                        <input type="checkbox" class="read-more-state" id="team6">
+                        <p class="read-more-wrap"><b> Dr. Abdul Hameed </b><br>
+                        Dr. Abdul Hameed after having acquired his basic and postgraduate qualification from prestigious KLE institute of dental sciences Bangalore has worked with several oncosurgeon, plastic/cosmetic surgeons, neurosurgeon and orthopaedic surgeon in Bangalore and Mumbai.  <span class="read-more-target">Dr Abdul Hameed is an astute maxillofacial Surgeon, clinician and a reputed implantologist with an inherent clinical acumen and talent with undisputed diagnostic and surgical skills.</span>
+                              </p>
+                        <label for="team6" class="read-more-trigger"></label>            
+                    </div> 
+                
+                </div>
+                <div class="item">
+                    <img class="img-responsive team_photo" src="img/team/7.png">
+                    <div class="testimonial_name">
+                        <input type="checkbox" class="read-more-state" id="team7">
+                        <p class="read-more-wrap"><b> Dr Sonia Tekchandani </b><br>
+                        Dr Sonia is a renowned dermatologist and co-founder of Tender Skin International, India & UAE.<span class="read-more-target"> With over 25 years of clinical & teaching experience, she is known for her par excellence injector skills and her eye for facial aesthetics.
+                        An established author of 2 books, industry pioneer and leading expert in aesthetic medicine, she is a staunch supporter of Women Empowerment </span>
+                              </p>
+                        <label for="team7" class="read-more-trigger"></label>            
+                    </div> 
+                
+                </div>
+                 </div>  
         </div>
     </section>
 <section id="contact">
     <div class="blue_belt " style="text-align:center;">
-            <div class="heading">Reach <span class="heading2"> Us At</span></div>
+            <div class="heading"> <span class="heading2"> Reach Us At</span></div>
     </div>
     <div style="position:relative;text-align: center">
         <div id="bg"></div> 
@@ -242,67 +289,101 @@
     <!-- form -->
     <!-- testimonials -->
 <section id="testimonial">
-      <div class="heading">  Testimonial <span class="heading2"></span></div>
+      <div class="heading" style="color:white;">  Testimonial</div>
     <div class="container-fluid" style="text-align: center;">
         <form>
-            <div class="testimonial owl-carousel owl-theme ">
-                <!-- connection -->
+            <div class="testimonial owl-carousel owl-theme">
+                <div class="row item testimonial_block well well-lg">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <img src="img/testimonial/1.jpg" class="img-responsive">
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                        <div class="testimonial_name">
+                        <div class="testimonial_user_name"> Karan </div>
+                        I've been to Dr. Kinjal Shah a couple of times for teeth cleaning and polishing. If she can manage my teeth, she can definitely manage anyone's. I also had a wisdom tooth removed. Not only was it painless, but she kept me calm and relaxed with her Can't remember last when was  it fun visiting a dentist. I would surely recommend her to everyone. Take care!  
+                        </div>
+                    </div>
+                </div>
+                <div class="row item testimonial_block well well-lg">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <img src="img/testimonial/2.jpg" class="img-responsive">
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                        <div class="testimonial_name">
+                        <div class="testimonial_user_name"> Neepa </div>
+                        here was severe pain in my previous root canals and I was very afraid of visiting dentists. But Dr. Chetan and Dr. Kinjal have the gift of doing painless root canals. Their hands are so gentle, I could not even feel the prick of the needle during anaesthesia. Not only did they treat the infection in my teeth but also gave me a wonderful smile makeover. Thanks to Dr. Chetan and Dr. Kinjal for giving me a beautiful smile that I always wanted.  </div>
+                    </div>
+                </div>
+                <div class="row item testimonial_block well well-lg">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <img src="img/testimonial/6.jpg" class="img-responsive">
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                        <div class="testimonial_name">
+                        <div class="testimonial_user_name"> Ati Anand</div>
+                        I have always been apprehensive of going to a dentist. Their instruments always instilled a fear in my mind. However, after visiting Dr. Kinjal Shah, this myth was removed. She has a very caring and gentle attitude towards her patients. She did a quick and thorough cleaning of my teeth, and there was no pain. She has a very gentle touch and is very professional in her work. I would certainly recommend people to go to her for their dental issues.</div>
+                    </div>
+                </div>
+                <div class="row item testimonial_block well well-lg">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <img src="img/testimonial/5.jpg" class="img-responsive">
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                        <div class="testimonial_name">
+                        <div class="testimonial_user_name"> Ayaan </div>
+                        "Amazing, as always! Ayaan was just 4 years old when I took him to Dr. Kinjal. Dr Kinjal Shah is more of a friend than a dentist to my son. The staff there are super friendly and sweet. My son's first dental treatment was done happily and he looks forward to go for it... "Thanks Dr Kinjal... I love you..."  </div>
+                    </div>
+                </div>
+               
+                <div class="row item testimonial_block well well-lg">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <img src="img/testimonial/4.jpg" class="img-responsive">
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                        <div class="testimonial_name">
+                        <div class="testimonial_user_name"> Saurabh </div>
+                        Had a wonderful and comfortable experience at Studio 32. I had a broken molar tooth. I was explained each step of the process and shown different options for replacement of the crown. I was at ease at all the appointments and they were flexible enough to adjust to my work timings so that I could attend my appointments after work. In all, a calm and relaxed experience... Just like a STUDIO.
+                  </div>
+                </div>
+                </div>
 
-                 <?php 
-                $servername = "localhost";
-                $username="root";
-                $password="";
-                $mydb="test";
-                $conn = mysqli_connect($servername, $username, $password, $mydb);
+                <div class="row item testimonial_block well well-lg">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <img src="img/testimonial/3.jpg" class="img-responsive">
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                        <div class="testimonial_name">
+                        <div class="testimonial_user_name"> Denaz </div>
+                        I am delighted to have known the doctors at Studio 32. They were of tremendous help in my time of pain and stress. I have always been very scared when it comes to visiting doctors. But they have not only cured my tooth problems but also overcome my fear of visiting dentists. They made me so comfortable every time and regularly followed up after every appointment that it felt really nice. Also they are so clean and hygienic that too tends to build trust as soon as you see how organized and professional everything is at their clinic.
+                        I do not think twice before going ahead with any decision regarding my dental problems if they have recommended it. I trust them and would recommend all my family members to visit them for any oral/dental issues even if it is just for consulting.They are the right and most honest team I have ever met. All the best to you. Thanks a ton!
+                  </div>
+                </div>
+                </div>
 
-                // Check connection
-                if (!$conn) {
-                    die("Connection failed: " . mysqli_connect_error());
-                }
-                else
-                {
-                // echo "connected successful , thankyou";
-                }
-                //get values froom html
+                <div class="row item testimonial_block well well-lg">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <img src="img/testimonial/7.jpg" class="img-responsive">
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                        <div class="testimonial_name">
+                        <div class="testimonial_user_name"> Lucy </div>
+                        When I came to Studio 32, the entire set up was very welcoming. The doctors are very friendly and polite to talk. They explained all the procedures and gave me various options to select from. I selected the option which the doctor suggested and I am glad it was the best decision. To my surprise I was also given a complimentary upgrade! Thank you for that. I was more than happy and delighted for such a wonderful experience and would highly recommend Studio 32 to anyone who seeks dental treatment.
+                  </div>
+                </div>
+                </div>
 
-                $sql = "SELECT * FROM testimonial";
-                $result = $conn->query($sql);
-
-                if ($result->num_rows > 0) {
-                    // output data of each row
-                    while($row = $result->fetch_assoc()) {
-                        ?>
-                            <div class="row item">
-                                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-                                    <img src="img/team/placeholder.png" class="img-circle img-responsive">
-                                  <div class="testimonial_user_name">  <?php echo $row["name"];?></div>
-                                </div>
-                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
-                                    <div class="testimonial_name">
-                                        <!-- <input type="checkbox" class="read-more-state" id="post1">
-
-                                        <p class="read-more-wrap">
-                                          1.  I am delighted to have known the doctors at Studio 32. They were of tremendous help in my time of pain and stress. I have always been very scared when it comes to visiting doctors.
-                                           <span class="read-more-target">  But they have not only cured my tooth problems but also overcome my fear of visiting dentists. They made me so comfortable every time and regularly followed up after every appointment that it felt really nice. Also they are so clean and hygienic that too tends to build trust as soon as you see how organized and professional everything is at their clinic.
-                                            I do not think twice before going ahead with any decision regarding my dental problems if they have recommended it. I trust them and would recommend all my family members to visit them for any oral/dental issues even if it is just for consulting.They are the right and most honest team I have ever met. All the best to you. Thanks a ton!</span>
-                                        </p> -->
-                                        <?php echo $row["message"]. "<br>"; ?>
-
-                                     <!--    <label for="post1" class="read-more-trigger"></label> -->
-                                    </div>
-                                </div>
-                            </div>
-
-                           <?php
-
-                                                           }
-                            } else {
-                                echo "0 results";
-                            }
-                            $conn->close();
-                            ?>
-            </div>
-            <a href="testimonial.php" class="btn btn-primary" style="margin:20px;">ADD TESTIMONIAL</a>
+                <div class="row item testimonial_block well well-lg">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <img src="img/testimonial/8.jpg" class="img-responsive">
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                        <div class="testimonial_name">
+                        <div class="testimonial_user_name"> Arfaa </div>                       
+                            My experience at Studio 32 has been excellent. Work was done quickly and efficiently. The clinic is hygienic and clean.  Love the fact that both doctors keep informing the patient about the procedure of the treatment. And also the fact that I was given a variety of caps that I could choose from.. Thanks a lot. Would recommend this clinic to others.
+                  </div>
+                </div>
+                </div>
+           <!--  <a href="testimonial.php" class="btn btn-primary" style="margin:20px;">ADD TESTIMONIAL</a> -->
         </form>
     </div>
 </section>
@@ -324,13 +405,7 @@
 
 <script type="text/javascript">
         // mobile navbar
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
+       
     jQuery(document).ready(function() {
 
         var owl = $('.team');
@@ -391,25 +466,17 @@
                         items:1
                     },            
                     960:{
-                        items:2
+                        items:1
                     },
                     1200:{
-                        items:2
+                        items:1
                     }
                 }
             });
 
   
     }); 
-    /*================scrolling to different section=============*/
-    $('.scroll').click(function(){
-       id=$(this).attr('id');
-       id=id.replace("scrollto","");
-        $('body,html').animate({
-            scrollTop : $('#'+id).offset().top  // Scroll to top of first row
-        }, 1000);
-         });
-    /*================scrolling to different section=============*/
+   
 //end of ready function
 </script>
 <!-- contact form bg animation -->
@@ -536,5 +603,27 @@
     
     window.onload = onLoad;
     window.onresize = onResize;
+</script>
+    <!-- dynamically reduce size the hexagon -->
+    <script type="text/javascript">
+    const hexagon_width = 6.77;
+    const hexagon_height = 6.06;
+    const hexagon_before_after_border = 13.55;
+    const font_size_ratio = 75.27;
+        $(document).ready(function(){
+            if($(window).width() > 768 ){
+                
+                current_width = $(window).width()/hexagon_width;
+                current_height = $(window).height()/hexagon_height;
+                current_before_after_border = $(window).width()/hexagon_before_after_border;
+                current_font_size= $(window).width()/font_size_ratio;
+                // console.log(current_width,current_height,current_before_after_border);
+                jQuery('.hexagon').css('width',current_width+'px');
+                jQuery('.hexagon').css('height',current_height+'px');
+                jQuery('.hexagon a').css('font-size',current_font_size+'px');
+                jQuery('.homepage_hexagon').append('<style type="text/css">.hexagon:before,.hexagon:after{ border-left: '+current_before_after_border+'px solid transparent;border-right: '+current_before_after_border+'px solid transparent;}</style>');
+            }
+        
+        });
     </script>
 </html>

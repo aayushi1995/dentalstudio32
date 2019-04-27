@@ -25,7 +25,7 @@
                                         <input type="email" id="email" name="email" placeholder="Enter your email address" required=""><br>
                                 </div>
                                 <div class="input-field">
-                                        <input type="text" id="mobilenumber" name="mobilenumber" placeholder="Enter your number"><br>
+                                        <input type="text" id="mobilenumber" name="mobile" placeholder="Enter your number"><br>
                                 </div>
                                <button type="submit" class="btn">Book an appoiment</button>
                             </form>

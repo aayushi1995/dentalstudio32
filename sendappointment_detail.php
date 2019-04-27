@@ -1,9 +1,9 @@
 
 <?php
 $servername = "localhost";
-$username = "id5008930_root";
-$password = "root123";
-$mydb="id5008930_test";
+$username = "thedenta_wp784";
+$password = "aayushi22";
+$mydb="thedenta_studio_new";
 // $username="root";
 // $password="";
 // $mydb="test";
@@ -31,7 +31,7 @@ $date_today = date("Y/m/d");
 // echo $message;
 //insert.
 
-$sql = "INSERT INTO appointments (name,mobile,email,appointement_date)
+$sql = "INSERT INTO appointments (name,mobile,email,date_today)
 VALUES ('$name','$mobile','$email','$date_today')";
 ?>
 <?php 
@@ -46,22 +46,25 @@ if ($conn->query($sql) === TRUE)
 ini_set( 'display_errors', 1 );
     error_reporting( E_ALL );
     $from = $_POST['email']; 
-    $to = "aayushi.kambriya5@gmail.com"; /*studio32clinic@gmail.com*/
-    $subject = $_POST['name']." contacted you via email from the contact us page";
-    $message = $_POST['message'];
+    $to = "hello@thedentalstudio32.com"; /*studio32clinic@gmail.com*/
+    $subject="Appointement recieved from ".$_POST['name'];
+    $message = "Hello ".$_POST['name'].", \n wants to book an appointment today.\n Please revert to the email mentioned below to confirm a slot.\n Mobile number :" .$_POST['mobile']." \n Email: ".$_POST['email']."\n\n Regards, \n Team Studio32.";
+    // $message = $_POST['message'];
     $headers = "From:" . $from;
     mail($to,$subject,$message, $headers);
-    echo "The email message was sent.";
+    // echo "The email message was sent.";
 	/************************************************************/
 	/*****************  SEND EMAIL TO customer FROM studio  ******************/
 	/************************************************************/
-  	$from1 = "hello@studio32.com"; 
-    $to1 = $_POST['email']; 
+  	$from1 = "hello@thedentalstudio32.com"; 
+    $to1 = $_POST['email'];
     $subject1 = "Thank You for Contacting STUDIO32";
-    $message1 = "Hello ".$_POST['name']." Thank You for contacting studio32. Your query has been sent to the customer executive. You will be contacted as soon as possible. PLEASE NOTE: This is an automatically generated response please don not reply to this email.";
+    $message1 = "Hello ".$_POST['name'].",\n Request has been made to book an appointement for you. \n Customer Exceutive will contact you as soon as possible.\n\n Regards, \n Team Studio32.";
     $headers1 = "From:" . $from1;
     mail($to1,$subject1,$message1, $headers1);
-    echo "The email message was sent.";
+    // echo "The email message was sent.";
+    header("Location: http://thedentalstudio32.com/index.php");
+    exit;
 
 } 
 else { 

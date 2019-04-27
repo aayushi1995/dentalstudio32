@@ -1,23 +1,4 @@
-<?php
 
-// echo phpinfo();
-//     $to = "aayushi@Pipabella.com";
-//     $from = $_REQUEST['name'];
-//     $subject = $_REQUEST['subject'];
-//     $name = $_REQUEST['name'];
-//     $headers = "From: $from";
-
-//     $fields = array();
-//     $fields{"name"} = "name";
-//     $fields{"email"} = "email";
-//     $fields{"subject"} = "subject";
-//     $fields{"message"} = "message";
-
-//     $body = "Here is what was sent:\n\n"; foreach($fields as $a => $b){   $body .= sprintf("%20s: %s\n",$b,$_REQUEST[$a]); }
-
-//     $send = mail($to, $subject, $body, $headers);
-
-?>
 <?php
 $servername = "localhost";
 $username="root";
@@ -39,14 +20,13 @@ else
 }
 //get values froom html
 $mobile="";
-
 $upload_success="";
 $img_src="";
 $name = $_POST['name'];
 $email = $_POST['email'];
 $mobile = $_POST['mobilenumber'];
 $message = $_POST['message'];
-$img_src = $_POST['fileToUpload'];
+
 if($img_src!=null){
 $count=0;
 $target_dir = "uploads/";
@@ -99,11 +79,7 @@ if((empty($name))&&(empty($mobile))&&(empty($email))&&(empty($message))){
 	$sql = "INSERT INTO testimonial (name,mobile,email,message,img_src)
 VALUES ('$name','$mobile','$email','$message','$filename')";
 }
-}
 
-?>
-
-<?php 
 if ($conn->query($sql) === TRUE) 
 {
 	session_start();
@@ -112,6 +88,7 @@ if ($conn->query($sql) === TRUE)
 } 
 else { 
   	echo "Error: " . $sql . "<br>" . $conn->error;
+}
 }
 $conn->close();
 ?>

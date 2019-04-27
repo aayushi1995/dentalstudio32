@@ -21,8 +21,8 @@
 <?php
 $servername = "localhost";
 $username="root";
-$password=""
-$mydb="test"
+$password="";
+$mydb="test";
 // $username = "id5008930_root";
 // $password = "root123";
 // $mydb="id5008930_test";

@@ -1,13 +1,13 @@
-  <script src="jQuery/jQuery.js"></script>
-    <!-- <script src="owl-carousel-assets/assets/vendors/jquery.min.js"></script> -->
-
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|EB+Garamond|PT+Serif|Volkhov|Caveat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
-    <link rel="stylesheet" href="owl-carousel-assets/owlcarousel/assets/owl.carousel.min.css">
+    <script src="jQuery/jQuery.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="bootstrap/js/bootstrap.js"></script>
     <script src="owl-carousel-assets/owlcarousel/owl.carousel.js"></script>
-    <!-- MAIN Styles -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media-query.css">
+    <link rel="stylesheet" href="owl_css.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+

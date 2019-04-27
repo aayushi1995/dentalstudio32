@@ -20,9 +20,9 @@
 ?>
 <?php
 $servername = "localhost";
-$username = "id5008930_root";
-$password = "root123";
-$mydb="id5008930_test";
+$username = "thedenta_wp784";
+$password = "aayushi22";
+$mydb="thedenta_studio_new";
 // $username="root";
 // $password="";
 // $mydb="test";
@@ -40,7 +40,7 @@ echo "connected successful , thankyou";
 //get values froom html
 
 $name = $_POST['name'];
-$mobile = $_POST['mobile'];
+$mobile = $_POST['mobilenumber'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 
@@ -70,17 +70,19 @@ ini_set( 'display_errors', 1 );
     $message = $_POST['message'];
     $headers = "From:" . $from;
     mail($to,$subject,$message, $headers);
-    echo "The email message was sent.";
+    // echo "The email message was sent.";
 	/************************************************************/
 	/*****************  SEND EMAIL TO customer FROM studio  ******************/
 	/************************************************************/
-  	$from1 = "hello@studio32.com"; 
+  	$from1 = "hello@thedentalstudio32.com"; 
     $to1 = $_POST['email']; 
     $subject1 = "Thank You for Contacting STUDIO32";
-    $message1 = "Hello ".$_POST['name']." , Thank You for contacting studio32. Your query has been sent to the customer executive. You will be contacted as soon as possible. PLEASE NOTE: This is an automatically generated response please don not reply to this email.";
+    $message1 = "Hello ".$_POST['name']." ,\n Thank You for contacting studio32.\n Your query has been sent to the customer executive. \n You will be contacted as soon as possible. \n\n Regards, \n Team Studio32. \n\n\n PLEASE NOTE: This is an automatically generated response please do not reply to this email.";
     $headers1 = "From:" . $from1;
     mail($to1,$subject1,$message1, $headers1);
-    echo "The email message was sent.";
+    // echo "The email message was sent.";
+    header("Location: http://thedentalstudio32.com/index.php");
+    exit;
 
 } 
 else { 
